@@ -402,7 +402,7 @@ This project will be developed alongside my academic learning, with advanced AI 
 
 
 
-\*\*Planned mentor:\*\* \[Add the name of one KRMU faculty member or senior student.]
+\*\*Planned mentor:\*\* \[ritesh kumar ]
 
 
 
