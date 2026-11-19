@@ -1,86 +1,70 @@
-\# Linux System Profile
+# Linux System Profile
 
+## 1. Workstation Specifications
 
+| Component | Specification |
+|---|---|
+| CPU Model | Intel(R) Core(TM) i5-4310M CPU @ 2.70GHz |
+| Physical CPU Cores | 2 |
+| Logical CPUs | 4 |
+| Architecture | x86_64 |
+| Total RAM | 7.5 GiB |
+| Used RAM | 479 MiB |
+| Available RAM | 7.0 GiB |
+| Primary Storage | Geonix Gold 512GB |
+| Storage Type | SSD |
+| Operating System | Ubuntu 26.04.1 LTS |
+| Kernel Version | 6.18.40.1-microsoft-standard-WSL2 |
+| Environment | Windows Subsystem for Linux 2 (WSL2) |
 
-\## 1. Project Information
+## 2. Binary Number Representation
 
-\- Project: Beginner Developer Ecosystem Portfolio
+### A. Decimal 75 to Binary
 
-\- Course: CSE103
+Repeated division by 2:
 
-\- Section: Linux System Administration
+| Division | Quotient | Remainder |
+|---|---:|---:|
+| 75 ÷ 2 | 37 | 1 |
+| 37 ÷ 2 | 18 | 1 |
+| 18 ÷ 2 | 9 | 0 |
+| 9 ÷ 2 | 4 | 1 |
+| 4 ÷ 2 | 2 | 0 |
+| 2 ÷ 2 | 1 | 0 |
+| 1 ÷ 2 | 0 | 1 |
 
-\- Student: Vikansh Chaudhary
+Reading the remainders from bottom to top:
 
+**75 (decimal) = 1001011 (binary)**
 
+### B. Binary 110101 to Decimal
 
-\## 2. Operating System
+Using positional weights:
 
-\- Distribution: Ubuntu
+| Binary Digit | Position | Calculation |
+|---|---:|---:|
+| 1 | 5 | 1 × 2⁵ = 32 |
+| 1 | 4 | 1 × 2⁴ = 16 |
+| 0 | 3 | 0 × 2³ = 0 |
+| 1 | 2 | 1 × 2² = 4 |
+| 0 | 1 | 0 × 2¹ = 0 |
+| 1 | 0 | 1 × 2⁰ = 1 |
 
-\- Version: Ubuntu 26.04.1 LTS
+Total = 32 + 16 + 0 + 4 + 0 + 1 = **53**
 
-\- Environment: Windows Subsystem for Linux (WSL2)
+**110101 (binary) = 53 (decimal)**
 
+### C. Why Computers Use Binary
 
+Computers use binary internally because their electronic circuits can reliably represent two states, ON (1) and OFF (0).
 
-\## 3. Kernel Information
+## 3. Commands Used for System Inspection
 
-\- Kernel: Linux
+- `lscpu` — Displays CPU architecture and processor details.
+- `free -h` — Displays memory usage.
+- `lsblk` — Lists block storage devices.
+- `uname -a` — Displays kernel and operating system information.
 
-\- Kernel version: 6.18.40.1-microsoft-standard-WSL2
+## 4. Conclusion
 
-\- Architecture: x86\_64
-
-\- Hostname: DESKTOP-D5LTOVN
-
-
-
-\## 4. Processor Information
-
-\- Processor: Intel Core i5-4310M @ 2.70 GHz
-
-\- Logical CPUs available: 4
-
-\- CPU architecture: 64-bit
-
-
-
-\## 5. Memory Information
-
-\- Total memory available: 7.5 GiB
-
-\- Available memory at the time of inspection: 7.0 GiB
-
-\- Swap space: 2.0 GiB
-
-
-
-\## 6. User Information
-
-\- Linux username: VIKANSH
-
-\- User ID: 1000
-
-\- Primary group ID: 1000
-
-\- Administrative privileges: sudo group membership
-
-
-
-\## 7. Storage Information
-
-\- Windows C: drive: 244 GB
-
-\- Windows D: drive: 233 GB
-
-\- Ubuntu virtual filesystem: approximately 1007 GB
-
-
-
-\## 8. Summary
-
-Ubuntu Linux was successfully installed and configured using WSL2. System information was collected using Linux commands such as `uname`, `lsb\_release`, `lscpu`, `free`, `df`, `whoami`, and `id`.
-
-
-
+This practical exercise helped me understand Linux system inspection, workstation hardware specifications, and the conversion between decimal and binary number systems using manual calculations.
