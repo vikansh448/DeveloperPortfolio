@@ -48,12 +48,12 @@ See [LEARNING_ROADMAP.md](LEARNING_ROADMAP.md).
 - [x] Created GitHub profile
 - [x] Created developer portfolio repository
 - [x] Organised repository structure
-- [ ] Complete Q1 — Linux
-- [ ] Complete Q2 — Shell Scripts
-- [ ] Complete Q3 — API
-- [ ] Complete Q4 — Professional Portfolio
-- [ ] Add screenshots and evidence
-- [ ] Finalise assignment PDF
+- [x] Complete Q1 — Linux
+- [x] Complete Q2 — Shell Scripts
+- [x] Complete Q3 — API
+- [x] Complete Q4 — Professional Portfolio
+- [x] Add screenshots and evidence
+- [x] Finalise assignment PDF
 
 ## Other Repositories
 
