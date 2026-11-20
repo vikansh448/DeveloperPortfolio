@@ -1,8 +1,8 @@
-\# API Interaction Summary
+# API Interaction Summary
 
 
 
-\## 1. What is a REST API?
+## 1. What is a REST API?
 
 
 
@@ -10,17 +10,17 @@ A REST API allows different software applications to communicate over the intern
 
 
 
-\## 2. HTTP Status Codes
+## 2. HTTP Status Codes
 
 
 
-\- \*\*200 OK:\*\* The request was successful, and the server returned the requested data.
+- **200 OK:** The request was successful, and the server returned the requested data.
 
-\- \*\*404 Not Found:\*\* The requested resource could not be found on the server.
+- **404 Not Found:** The requested resource could not be found on the server.
 
 
 
-\## 3. GitHub API
+## 3. GitHub API
 
 
 
@@ -28,7 +28,7 @@ The GitHub REST API was used to retrieve public profile information for the user
 
 
 
-The response was saved in `github\_profile.json`.
+The response was saved in `github_profile.json`.
 
 
 
@@ -38,7 +38,7 @@ The following `jq` command extracted selected information:
 
 ```bash
 
-cat API/github\_profile.json | jq '{name:.name, repos:.public\_repos, followers:.followers, joined:.created\_at}'
+cat API/github_profile.json | jq '{name:.name, repos:.public_repos, followers:.followers, joined:.created_at}'
 
 ```
 
@@ -46,19 +46,19 @@ cat API/github\_profile.json | jq '{name:.name, repos:.public\_repos, followers:
 
 Explanation:
 
-\- `jq` processes JSON data.
+- `jq` processes JSON data.
 
-\- `.name` extracts the GitHub user's name.
+- `.name` extracts the GitHub user's name.
 
-\- `.public\_repos` extracts the number of public repositories.
+- `.public_repos` extracts the number of public repositories.
 
-\- `.followers` extracts the follower count.
+- `.followers` extracts the follower count.
 
-\- `.created\_at` extracts the account creation date.
+- `.created_at` extracts the account creation date.
 
 
 
-\## 4. JSONPlaceholder API
+## 4. JSONPlaceholder API
 
 
 
@@ -66,7 +66,7 @@ The JSONPlaceholder API was used to download sample posts.
 
 
 
-The response was saved in `sample\_posts.json`.
+The response was saved in `sample_posts.json`.
 
 
 
@@ -76,17 +76,17 @@ The command below counted the posts:
 
 ```bash
 
-cat API/sample\_posts.json | jq length
+cat API/sample_posts.json | jq length
 
 ```
 
 
 
-\*\*Result:\*\* 100 posts were retrieved successfully.
+**Result:** 100 posts were retrieved successfully.
 
 
 
-\## 5. Conclusion
+## 5. Conclusion
 
 
 

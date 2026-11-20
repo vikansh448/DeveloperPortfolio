@@ -1,4 +1,4 @@
-\# Linux Command Reference
+# Linux Command Reference
 
 
 
@@ -46,19 +46,19 @@ This document records the basic Linux commands used during the CSE103 project.
 
 
 
-\## Practical Environment
+## Practical Environment
 
 
 
-\- Linux distribution: Ubuntu 26.04.1 LTS
+- Linux distribution: Ubuntu 26.04.1 LTS
 
-\- Environment: WSL2
+- Environment: WSL2
 
-\- Terminal: Ubuntu Bash
+- Terminal: Ubuntu Bash
 
 
 
-\## Learning Outcome
+## Learning Outcome
 
 
 
